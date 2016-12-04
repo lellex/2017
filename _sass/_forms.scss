@@ -24,3 +24,15 @@ select {
   -webkit-appearance: textfield;
           appearance: textfield;
 }
+
+.form-select {
+  position: relative;
+  &::after {
+    content: '\25BE';
+    position: absolute;
+    top: 2em;
+    right: 1em;
+    font-size: $default-font-size;
+    color: #000;
+  }
+}
